@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Admin Panel</h1>
+            <nav>
+                <button id="showAddCity">Add City</button>
+                <button id="showAddVegetable">Add Vegetable</button>
+            </nav>
+        </header>
+
+        <section id="cityForm" class="form-section hidden">
+            <h2>Add City</h2>
+            <form id="addCityForm">
+                <input type="text" id="cityName" placeholder="City Name" required>
+                <button type="submit">Add City</button>
+            </form>
+        </section>
+
+        <section id="vegetableForm" class="form-section hidden">
+            <h2>Add Vegetable</h2>
+            <form id="addVegetableForm">
+                <select id="citySelect" required>
+                    <option value="">Select City</option>
+                </select>
+                <input type="text" id="vegSerialNo" placeholder="Serial No." required>
+                <input type="text" id="vegName" placeholder="Name" required>
+                <textarea id="vegDescription" placeholder="Description"></textarea>
+                <input type="number" id="vegPrice" placeholder="Price" required>
+                <button type="submit">Add Vegetable</button>
+            </form>
+        </section>
+
+        <section id="vegetableList">
+            <h2>Vegetable List</h2>
+            <div id="vegetableTable">
+                <!-- Vegetables will be listed here -->
+            </div>
+        </section>
+
+        <!-- Hidden form for updating vegetable -->
+        <section id="updateVegetableForm" class="form-section hidden">
+            <h2>Update Vegetable</h2>
+            <form id="editVegetableForm">
+                <input type="text" id="editVegSerialNo" placeholder="Serial No." required>
+                <input type="text" id="editVegName" placeholder="Name" required>
+                <textarea id="editVegDescription" placeholder="Description"></textarea>
+                <input type="number" id="editVegPrice" placeholder="Price" required>
+                <button type="submit">Update Vegetable</button>
+            </form>
+        </section>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+</html>

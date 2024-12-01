@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegetable Prices</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Vegetable Prices</h1>
+        </header>
+        <section class="controls">
+            <div class="dropdown">
+                <select id="citySelect">
+                    <option value="default">Select city</option>
+                    <option value="lahore">Lahore</option>
+                    <option value="faisalabad">Faisalabad</option>
+                    <option value="pakpattan">Pakpattan</option>
+                </select>
+                <div class="button-group">
+                    <button class="red-button" onclick="getPrices()">Get Prices</button>
+                </div>
+            </div>
+        </section>
+        <section class="table-container" id="tableContainer">
+            <p class="datetime" id="dateTime"></p>
+            <input type="text" id="searchInput" class="search-input" placeholder="Search vegetable name" oninput="filterTable()">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Serial Number</th>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody id="priceTable">
+                    <!-- Table rows will be inserted here -->
+                </tbody>
+            </table>
+            <div class="print-container">
+                <button class="print-button" onclick="printTable()">Print</button>
+            </div>
+        </section>
+    </div>
+
+    <script src="user-vegetable.js"></script>
+</body>
+
+</html>

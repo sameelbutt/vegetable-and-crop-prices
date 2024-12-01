@@ -1,0 +1,272 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Vegetable Prices
+    style.
+      /* Global Styles */
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+      }
+      
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+      }
+      
+      .header {
+        text-align: center;
+        padding: 20px 0;
+        background: linear-gradient(to right, #ff7e5f, #feb47b);
+        color: white;
+        border-radius: 8px 8px 0 0;
+      }
+      
+      .controls {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+      }
+      
+      .dropdown {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 1;
+      }
+      
+      .dropdown select {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      
+      .search {
+        display: flex;
+        align-items: center;
+        flex: 1;
+      }
+      
+      .search input {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      
+      .button-group {
+        display: flex;
+        gap: 10px;
+      }
+      
+      .red-button {
+       background: linear-gradient(to right, #ff7e5f, #feb47b);
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        margin-left: 7px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      
+      .red-button:hover {
+        background-color: #c82333;
+      }
+      
+      .table-container {
+        margin-top: 20px;
+        display: none;
+      }
+      
+      .datetime {
+       background: linear-gradient(to right, #ff7e5f, #feb47b); /* Updated color */
+        color: white;
+        padding: 10px;
+        text-align: center;
+        border-radius: 5px;
+        margin-bottom: 20px;
+      }
+      
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+      }
+      
+      table, th, td {
+        border: 1px solid #ccc;
+      }
+      
+      th, td {
+        padding: 15px;
+        text-align: left;
+      }
+      
+      thead {
+       background: linear-gradient(to right, #ff7e5f, #feb47b); /* Updated color */
+        color: white;
+      }
+      
+      tbody tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+      
+      .print-container {
+        text-align: right;
+        margin-top: 10px;
+      }
+      
+      .print-button {
+        background: linear-gradient(to right, #ff7e5f, #feb47b); /* Updated color */
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      
+      .print-button:hover {
+        background-color: #e67e6d;
+      }
+      
+      @media (max-width: 768px) {
+        .controls, .dropdown, .search {
+          flex-direction: column;
+          align-items: stretch;
+        }
+        
+        .button-group {
+          justify-content: center;
+          margin-top: 10px;
+        }
+        
+        table, th, td {
+          font-size: 14px;
+        }
+      }
+      
+      @media print {
+        .header, .controls, .print-button, .print-container {
+          display: none;
+        }
+        
+        .container {
+          box-shadow: none;
+        }
+        
+        .table-container {
+          margin: 0;
+          padding: 0;
+          border: none;
+        }
+        
+        table, th, td {
+          border: 1px solid #000;
+          border-collapse: collapse;
+        }
+        
+        th, td {
+          padding: 5px;
+        }
+        
+        thead {
+          background-color: #ddd;
+          color: #000;
+        }
+      }
+  body
+    .container
+      .header
+        h1 Vegetable Prices
+      
+      .section.controls
+        .dropdown
+          select#citySelect
+            option(value="default") Select city
+            each city in cities
+              option(value=city)= city
+        
+        .search
+          input#searchInput(type="text", placeholder="Search vegetables")
+          
+        .button-group
+          button.red-button(onclick="getPrices()") Get Prices
+      
+      #tableContainer.section.table-container
+        #dateTime.datetime
+        table
+          thead
+            tr
+              th Serial Number
+              th Name
+              th Description
+              th Price
+          tbody#priceTable
+        
+        .print-container
+          button.print-button(onclick="printTable()") Print
+
+    script.
+      async function getPrices() {
+        const city = document.getElementById('citySelect').value;
+        const searchQuery = document.getElementById('searchInput').value.toLowerCase();
+        const tableBody = document.getElementById('priceTable');
+        const tableContainer = document.getElementById('tableContainer');
+        const dateTime = document.getElementById('dateTime');
+        tableBody.innerHTML = '';
+
+        if (city !== 'default') {
+          try {
+            const response = await fetch(`/api/v1/vegetableprice?city=${city}`);
+            const data = await response.json();
+            
+            if (data.status === 'success') {
+              data.data
+                .filter(item => item.name.toLowerCase().includes(searchQuery))
+                .forEach(item => createTableRow(item, tableBody));
+              tableContainer.style.display = 'block';
+              const savedDate = new Date().toLocaleString();
+              dateTime.textContent = `Date of last update: ${savedDate}`;
+            } else {
+              throw new Error(data.message || 'An error occurred');
+            }
+          } catch (error) {
+            console.error('Error fetching prices:', error);
+            alert('An error occurred while fetching prices');
+          }
+        } else {
+          tableContainer.style.display = 'none';
+        }
+      }
+
+      function createTableRow(item, tableBody) {
+        const row = document.createElement('tr');
+        row.innerHTML = `
+          <td>${item.serialNumber}</td>
+          <td>${item.name}</td>
+          <td>${item.description}</td>
+          <td>${item.price}</td>
+        `;
+        tableBody.appendChild(row);
+      }
+
+      function printTable() {
+        window.print();
+      }

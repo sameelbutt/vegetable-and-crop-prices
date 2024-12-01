@@ -1,0 +1,98 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title  Signup
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.2/axios.min.js")
+    style.
+      body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(to right, #ff7e5f, #feb47b);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      .login-container {
+        background: #fff;
+        padding: 2rem;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 400px;
+        text-align: center; /* Center align the text inside .login-container */
+      }
+      .login-header {
+        margin-bottom: 1rem;
+        color: #333;
+        font-size: 24px;
+        font-weight: bold;
+      }
+      .form {
+        text-align: left;
+      }
+      #loginForm input[type="email"],
+      #loginForm input[type="password"] {
+        width: 93%;
+        padding: 0.8rem;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-size: 1rem;
+        margin-bottom: 1rem;
+      }
+      h4 {
+        margin-bottom: 0.5rem;
+        color: #666;
+      }
+      button {
+        background: #ff7e5f;
+        color: #fff;
+        padding: 0.8rem 1.5rem;
+        border: none;
+        border-radius: 4px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background 0.3s ease;
+        width: 100%;
+      }
+      button:hover {
+        background: #feb47b;
+      }
+      @media (max-width: 600px) {
+        .login-container {
+          padding: 1rem;
+        }
+        button {
+          padding: 0.7rem 1.2rem;
+        }
+      }
+      a {
+        text-decoration: none;
+        color: #ff7e5f;
+        display: block;
+        margin-top: 1rem;
+        font-size: 0.9rem;
+        font-weight: bold;
+      }
+      .switch-link {
+        margin-top: 1rem;
+        text-align: center;
+      }
+
+  body
+    .login-container
+      .login-header Signup
+      .form
+        form#loginForm
+          h4 Enter your E-mail
+          input(type="email", id="emailInput", required)
+          h4 Enter your Password
+          input(type="password", id="passwordInput", required)
+          h4 Enter your Confirm Password
+          input(type="password", id="ConfirmpasswordInput", required)
+          button(type="submit") Submit
+      .switch-link
+        a(href="/login") Switch to Login
+    script(src='/js/signup.js')

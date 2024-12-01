@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agriculture Grow - Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Agriculture Grow</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="Index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="diagnose.html">Diagnosis</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#market">Market Prices</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Image Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Bootstrap Slider -->
+    <section id="home" class="hero-section">
+        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" style="background-image: url('photo/1.jpg');">
+                    <div class="carousel-caption">
+                        <h1>Welcome to Agriculture Grow</h1>
+                        <p>Your comprehensive platform for agricultural knowledge, market updates, and community
+                            engagement.</p>
+                        <a href="#diagnosis" class="btn btn-primary">Get Started</a>
+                    </div>
+                </div>
+                <div class="carousel-item" style="background-image: url('photo/2.jpg');">
+                    <div class="carousel-caption">
+                        <h1>Empower Your Farm</h1>
+                        <p>Get expert advice and tools to maximize your farming potential.</p>
+                        <a href="#services" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+                <div class="carousel-item" style="background-image: url('photo/3.jpg');">
+                    <div class="carousel-caption">
+                        <h1>Stay Ahead in Agriculture</h1>
+                        <p>Access the latest updates and trends in modern farming.</p>
+                        <a href="blog.html" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section  py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Features</h2>
+            <div class="row text-center">
+                <div class="col-md-4 mb-4 ">
+                    <div class="feature-icon bg-primary text-white rounded-circle mb-3 mx-auto">
+                        <i class="bi bi-camera" style="font-size: 2.5rem;"></i>
+                    </div>
+                    <h4>Plant Diagnosis</h4>
+                    <p>Upload images and get an instant diagnosis of plant health using advanced AI technology.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="feature-icon bg-success text-white rounded-circle mb-3 mx-auto">
+                        <i class="bi bi-graph-up" style="font-size: 2.5rem;"></i>
+                    </div>
+                    <h4>Market Prices</h4>
+                    <p>Stay updated with real-time market prices to make informed selling decisions.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="feature-icon bg-info text-white rounded-circle mb-3 mx-auto">
+                        <i class="bi bi-journal" style="font-size: 2.5rem;"></i>
+                    </div>
+                    <h4>Latest News</h4>
+                    <p>Read the latest news, articles, and blog posts about modern farming practices and more.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="main">
+        <!-- Blog Section -->
+        <section id="blog" class="blog-section">
+            <!-- Section Title -->
+            <div class="container section-title">
+                <h2>Our Blog</h2>
+                <p>Latest news and updates in agriculture</p>
+            </div><!-- End Section Title -->
+
+            <div class="container">
+                <div class="row gy-4">
+                    <!-- Blog Post 1 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="blog-post">
+                            <img src="photo/1.jpg" alt="Blog Image">
+                            <h3>Top 10 Farming Techniques to Improve Yield</h3>
+                            <p>Learn about the most effective farming techniques that can help you increase your yield
+                                and improve the quality of your crops.</p>
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#blogModal1">Read More</a>
+                        </div>
+                    </div><!-- End Blog Post 1 -->
+
+                    <!-- Blog Post 2 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="blog-post">
+                            <img src="photo/2.jpg" alt="Blog Image">
+                            <h3>The Future of Agriculture: Trends to Watch</h3>
+                            <p>Explore the future trends in agriculture that are set to transform the industry and how
+                                you can stay ahead of the curve.</p>
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#blogModal2">Read More</a>
+                        </div>
+                    </div><!-- End Blog Post 2 -->
+
+                    <!-- Blog Post 3 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="blog-post">
+                            <img src="photo/3.jpg" alt="Blog Image">
+                            <h3>Organic Farming: Benefits and Challenges</h3>
+                            <p>Understand the benefits and challenges of organic farming and how it can be a sustainable
+                                alternative for your farm.</p>
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#blogModal3">Read More</a>
+                        </div>
+                    </div><!-- End Blog Post 3 -->
+                </div>
+            </div>
+        </section><!-- End Blog Section -->
+    </main><!-- End Main Content -->
+
+    <!-- Models for blog  -->
+    <!-- Blog Modals -->
+    <div class="modal fade" id="blogModal1" tabindex="-1" aria-labelledby="blogModalLabel1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="blogModalLabel1">Top 10 Farming Techniques to Improve Yield</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Learn about the most effective farming techniques that can help you increase your yield and
+                        improve the quality of your crops. From advanced irrigation methods to crop rotation strategies,
+                        this guide provides comprehensive insights and practical tips for modern farmers.</p>
+
+                    <h6>1. Smart Farming</h6>
+                    <p>Description: Using gadgets like GPS and sensors to check crops and soil conditions.</p>
+                    <p>Benefit: Saves time, cuts waste, and helps farmers work more accurately.</p>
+
+                    <h6>2. Crop Switching</h6>
+                    <p>Description: Changing what you grow in a field every season.</p>
+                    <p>Benefit: Keeps the soil healthy and prevents pests.</p>
+
+                    <h6>3. Safe Pest Control</h6>
+                    <p>Description: Combining natural and chemical methods to handle pests.</p>
+                    <p>Benefit: Reduces pests while using fewer harmful chemicals.</p>
+
+                    <h6>4. No-Till Farming</h6>
+                    <p>Description: Reducing or stopping the tilling of soil.</p>
+                    <p>Benefit: Keeps soil healthy and holds water better.</p>
+
+                    <h6>5. Cover Crops</h6>
+                    <p>Description: Growing plants to protect the soil when you're not growing your main crops.</p>
+                    <p>Benefit: Stops soil from washing away and adds nutrients.</p>
+
+                    <h6>6. Mixing Trees and Crops</h6>
+                    <p>Description: Growing trees or bushes alongside crops.</p>
+                    <p>Benefit: Trees improve soil and provide extra products like wood or fruit.</p>
+
+                    <h6>7. Smart Watering</h6>
+                    <p>Description: Using drip irrigation or other ways to give plants just the right amount of water.
+                    </p>
+                    <p>Benefit: Saves water and boosts crop yield.</p>
+
+                    <h6>8. Strong Crops</h6>
+                    <p>Description: Growing crops that are changed to resist pests or tough weather.</p>
+                    <p>Benefit: Bigger and stronger crops.</p>
+
+                    <h6>9. Natural Farming</h6>
+                    <p>Description: Using compost, animal waste, and other natural things instead of chemicals.</p>
+                    <p>Benefit: Keeps soil healthy and produces cleaner food.</p>
+
+                    <h6>10. Growing Without Soil</h6>
+                    <p>Description: Using water and nutrients instead of soil, often growing plants in tall stacks
+                        indoors.</p>
+                    <p>Benefit: Saves space and uses less water.</p>
+
+                    <p>Source: <a href="https://www.farmgro.africa/9-ways-to-improve-crop-yield-a-farmers-guide/"
+                            target="_blank">https://www.farmgro.africa/9-ways-to-improve-crop-yield-a-farmers-guide/</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div><!-- End Modal 1 -->
+
+
+
+    <!-- Modal 2 -->
+    <div class="modal fade" id="blogModal2" tabindex="-1" aria-labelledby="blogModalLabel2" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="blogModalLabel2">The Future of Agriculture: Trends to Watch</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Explore the future trends in agriculture that are set to transform the industry and how you can
+                        stay ahead of the curve. This article covers emerging technologies, changing market demands, and
+                        new approaches to sustainable farming.</p>
+
+                    <h6>1. Precision Farming</h6>
+                    <p>Description: Using data and sensors to monitor crops and soil to optimize resources.</p>
+                    <p>Benefit: Improves crop yields while reducing waste and costs.</p>
+
+                    <h6>2. Autonomous Equipment</h6>
+                    <p>Description: Self-driving tractors and harvesters that work without human intervention.</p>
+                    <p>Benefit: Increases efficiency and reduces labor costs.</p>
+
+                    <h6>3. Vertical Farming</h6>
+                    <p>Description: Growing crops in stacked layers indoors using LED lights and controlled
+                        environments.</p>
+                    <p>Benefit: Maximizes space and allows for year-round crop production in urban areas.</p>
+
+                    <h6>4. AI in Agriculture</h6>
+                    <p>Description: Using artificial intelligence to predict crop performance, manage risks, and
+                        optimize farming practices.</p>
+                    <p>Benefit: Improves decision-making and reduces uncertainty in farming.</p>
+
+                    <h6>5. Genetic Engineering</h6>
+                    <p>Description: Developing crops that are more resistant to diseases, pests, and extreme weather.
+                    </p>
+                    <p>Benefit: Enhances food security and sustainability by increasing crop resilience.</p>
+
+                    <h6>6. Drone Technology</h6>
+                    <p>Description: Using drones for crop monitoring, spraying, and data collection.</p>
+                    <p>Benefit: Saves time and provides detailed insights into crop health.</p>
+
+                    <h6>7. Blockchain in Supply Chains</h6>
+                    <p>Description: Using blockchain to improve transparency and traceability in the food supply chain.
+                    </p>
+                    <p>Benefit: Ensures food safety and builds consumer trust by tracking products from farm to table.
+                    </p>
+
+                    <h6>8. Sustainable Practices</h6>
+                    <p>Description: Incorporating renewable energy, water conservation, and eco-friendly techniques.</p>
+                    <p>Benefit: Reduces environmental impact and promotes long-term sustainability.</p>
+
+                    <h6>9. Regenerative Agriculture</h6>
+                    <p>Description: Practices that restore soil health, improve biodiversity, and reverse climate change
+                        impacts.</p>
+                    <p>Benefit: Enhances soil productivity and contributes to carbon sequestration.</p>
+
+                    <h6>10. Alternative Proteins</h6>
+                    <p>Description: Exploring plant-based and lab-grown meat as alternatives to traditional livestock
+                        farming.</p>
+                    <p>Benefit: Reduces environmental footprint and meets the growing demand for sustainable protein
+                        sources.</p>
+
+                    <p>Source: <a href="https://www.icl-group.com/blog/top-agritech-trends-to-watch-for-2024/"
+                            target="_blank">https://www.icl-group.com/blog/top-agritech-trends-to-watch-for-2024/</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div><!-- End Modal 2 -->
+
+    <!-- Modal 3 -->
+    <div class="modal fade" id="blogModal3" tabindex="-1" aria-labelledby="blogModalLabel3" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="blogModalLabel3">Organic Farming: Benefits and Challenges</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Understand the benefits and challenges of organic farming and how it can be a sustainable
+                        alternative for your farm. This post delves into the principles of organic farming, the
+                        advantages it offers, and the hurdles you might face when transitioning from conventional
+                        methods.</p>
+
+                    <h6>1. No Synthetic Chemicals</h6>
+                    <p>Description: Organic farming avoids synthetic fertilizers, pesticides, and herbicides.</p>
+                    <p>Benefit: Produces healthier food, reduces pollution, and protects ecosystems.</p>
+
+                    <h6>2. Improved Soil Health</h6>
+                    <p>Description: Organic methods emphasize using compost, crop rotation, and cover crops to build
+                        soil fertility.</p>
+                    <p>Benefit: Enhances soil structure, increases biodiversity, and improves long-term productivity.
+                    </p>
+
+                    <h6>3. Higher Labor Costs</h6>
+                    <p>Description: Organic farming often requires more hands-on work and manual processes.</p>
+                    <p>Challenge: Higher labor costs and increased time investment can impact profitability.</p>
+
+                    <h6>4. Limited Yields</h6>
+                    <p>Description: Organic crops may yield less compared to conventional farming, especially during the
+                        transition period.</p>
+                    <p>Challenge: Lower yields can affect revenue and require careful management to remain competitive.
+                    </p>
+
+                    <h6>5. Environmental Sustainability</h6>
+                    <p>Description: Organic practices minimize the use of non-renewable resources and reduce greenhouse
+                        gas emissions.</p>
+                    <p>Benefit: Promotes a more sustainable farming system that supports biodiversity and climate
+                        resilience.</p>
+
+                    <h6>6. Certification Process</h6>
+                    <p>Description: Farmers must meet strict standards and undergo regular inspections to maintain
+                        organic certification.</p>
+                    <p>Challenge: The certification process can be costly and time-consuming for small-scale farmers.
+                    </p>
+
+                    <h6>7. Consumer Demand</h6>
+                    <p>Description: Organic products are in high demand, with consumers willing to pay premium prices.
+                    </p>
+                    <p>Benefit: Higher market prices can lead to greater profits for organic farmers.</p>
+
+                    <h6>8. Pest and Weed Control</h6>
+                    <p>Description: Organic farmers rely on natural methods like crop rotation, biological pest control,
+                        and manual weeding.</p>
+                    <p>Challenge: Managing pests and weeds without synthetic chemicals can be difficult and
+                        labor-intensive.</p>
+
+                    <h6>9. Animal Welfare</h6>
+                    <p>Description: Organic farming emphasizes ethical treatment of animals, providing them with
+                        natural, healthy living conditions.</p>
+                    <p>Benefit: Enhances animal health and welfare, improving the quality of animal products.</p>
+
+                    <h6>10. Crop Diversity</h6>
+                    <p>Description: Organic farms often grow a variety of crops to maintain ecological balance and
+                        improve resilience.</p>
+                    <p>Benefit: Reduces risks of disease and pest outbreaks, while promoting biodiversity.</p>
+
+                    <p>Source: <a href="https://hastomnigeria.com/organic-farming-the-benefits-and-challenges/"
+                            target="_blank">https://hastomnigeria.com/organic-farming-the-benefits-and-challenges/</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div><!-- End Modal 3 -->
+
+
+
+
+
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <h2>Image Gallery</h2>
+            <div class="row">
+                <!-- Gallery Item -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="gallery-item">
+                        <img src="photo/4 g.jpg" alt="Placeholder Image 1">
+                    </div>
+                </div>
+                <!-- Repeat Gallery Item with different images -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="gallery-item">
+                        <img src="photo/5 g.jpg" alt="Placeholder Image 2">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="gallery-item">
+                        <img src="photo/6 g.jpg" alt="Placeholder Image 3">
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <!-- About Us -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>About Agriculture Grow</h5>
+                    <p>Agriculture Grow is your trusted platform for all agricultural insights, tips, and market trends.
+                        We are dedicated to empowering farmers and the agricultural community with reliable information.
+                    </p>
+                </div>
+                <!-- Quick Links -->
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#diagnosis">Diagnosis</a></li>
+                        <li><a href="#market">Market Prices</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                <!-- Services -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Our Services</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#consulting">Consulting</a></li>
+                        <li><a href="#support">24/7 Support</a></li>
+                        <li><a href="#training">Training</a></li>
+                        <li><a href="#resources">Resources</a></li>
+                    </ul>
+                </div>
+                <!-- Contact Information -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5>Contact Information</h5>
+                    <div class="contact-info">
+                        <p><i class="bi bi-geo-alt"></i> faisal garden, lahore</p>
+                        <p><i class="bi bi-envelope"></i> contact@agriculturegrow.com</p>
+                        <p><i class="bi bi-telephone"></i> +92 342 567 890</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Social Media Links -->
+            <div class="row mt-4">
+                <div class="col text-center social-icons">
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-twitter"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+            <!-- Copyright -->
+            <div class="row mt-4">
+                <div class="col text-center">
+                    <p>&copy; 2024 Agriculture Grow. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Set the interval for the carousel to 2.5 seconds (2500 milliseconds)
+        const heroCarousel = new bootstrap.Carousel('#heroCarousel', {
+            interval: 2500,
+            pause: false
+        });
+    </script>
+</body>
+
+</html>

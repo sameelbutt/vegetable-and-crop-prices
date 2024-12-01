@@ -1,0 +1,389 @@
+/* Global Styles */
+
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #284b63;
+    color: #ff7631;
+    border-radius: 8px 8px 0 0;
+}
+
+/* Controls Section */
+.controls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.dropdown {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+.dropdown select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+}
+
+.red-button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.red-button:hover {
+    background-color: #c82333;
+}
+
+/* Table Section */
+.table-container {
+    margin-top: 20px;
+    display: none;
+}
+
+.datetime {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.search-input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.search-input:focus {
+    border-color: #007bff;
+}
+
+.add-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    float: right;
+    margin-bottom: 10px;
+}
+
+.add-button:hover {
+    background-color: #218838;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table,
+th,
+td {
+    border: 1px solid #ccc;
+}
+
+th,
+td {
+    padding: 15px;
+    text-align: left;
+}
+
+thead {
+    background-color: #007bff;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.crud-button {
+    padding: 8px 12px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.crud-button.update-price {
+    background-color: #007bff;
+    color: white;
+}
+
+.crud-button.update {
+    background-color: #ffc107;
+    color: white;
+}
+
+.crud-button.delete {
+    background-color: #dc3545;
+    color: white;
+}
+
+.crud-button.update-price:hover {
+    background-color: #0056b3;
+}
+
+.crud-button.update:hover {
+    background-color: #e0a800;
+}
+
+.crud-button.delete:hover {
+    background-color: #c82333;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    z-index: 1000;
+}
+
+.modal.active {
+    display: block;
+}
+
+.modal-header {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.modal input {
+    width: 95%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.modal input:focus {
+    border-color: #007bff;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+.modal button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.modal button:hover {
+    background-color: #0056b3;
+}
+
+.close-button {
+    background-color: gray;
+}
+
+.close-button:hover {
+    background-color: #6c757d;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+
+    .controls,
+    .dropdown {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .button-group {
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .search-input {
+        width: 95%;
+        margin: 10px 0;
+    }
+   
+
+    table,
+    th,
+    td {
+        font-size: 14px;
+    }
+
+    .crud-button {
+        padding: 6px 10px;
+    }
+}
+
+
+/* Print Button Styles */
+.print-container {
+    text-align: right;
+    margin-top: 10px;
+}
+
+.print-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.print-button:hover {
+    background-color: #0056b3;
+}
+
+@media print {
+
+    .header,
+    .controls,
+    .search-input,
+    .add-veg-button,
+    .print-button,
+    .print-container {
+        display: none;
+    }
+
+    .container {
+        box-shadow: none;
+    }
+
+    .table-container {
+        margin: 0;
+        padding: 0;
+        border: none;
+    }
+
+    table,
+    th,
+    td {
+        border: 1px solid #000;
+        border-collapse: collapse;
+    }
+
+    th,
+    td {
+        padding: 5px;
+    }
+
+    thead {
+        background-color: #ddd;
+        color: #000;
+    }
+
+
+    .hide-print {
+        display: none;
+    }
+
+    th.hide-print,
+    td.hide-print {
+        display: none;
+    }
+
+}
+
+
+/* style for the market prices cards */
+
+.card-container {
+    width: 100%;
+    max-width: 800px;
+    margin-top: 100px;
+}
+
+.card {
+    height: 150px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.card img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: auto;
+}
+
+.card-body {
+    display: flex;
+    align-items: center;
+    padding-left: 170px; /* Adjusted padding to 5px left of the image */
+}
+
+.card-title {
+    font-weight: bold;
+   
+}
+
+.card-A {
+    background-color: #3a6fb0;
+    color: #ffffff;
+}
+
+.card-B {
+    background-color: #57a86c;
+    color: #ffffff;
+}
+
+.card:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}

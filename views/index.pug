@@ -1,0 +1,63 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title Market Prices
+    style.
+      body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f8f9fa;
+        padding: 20px;
+      }
+      .card-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      .card {
+        width: 100%;
+        max-width: 400px;
+        margin-bottom: 20px;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        text-decoration: none; /* Ensures no underline on links */
+        color: inherit; /* Inherits text color */
+      }
+      .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      }
+      .card-img {
+        width: 100%;
+        height: auto;
+      }
+      .card-body {
+        padding: 15px;
+        text-align: center;
+        background-color: #fff;
+      }
+      .card-title {
+        font-size: 1.5em;
+        color: #007bff;
+        margin: 0;
+      }
+
+  body
+    .card-container
+      a.card(href="/vegetable-prices")
+        img.card-img(src="https://via.placeholder.com/400x200" alt="Vegetable Prices Image")
+        .card-body
+          h5.card-title Vegetable Prices
+
+      a.card(href="/crop-prices")
+        img.card-img(src="https://via.placeholder.com/400x200" alt="Crop Prices Image")
+        .card-body
+          h5.card-title Crop Prices
+
+  script(src="https://code.jquery.com/jquery-3.5.1.slim.min.js")
+  script(src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js")
+  script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js")

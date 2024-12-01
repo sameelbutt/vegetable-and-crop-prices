@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Agriculture Grow</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Agriculture Grow</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="diagnose.html">Diagnosis</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#market">Market Prices</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Image Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Blog Section -->
+        <section id="blog" class="blog-section">
+            <!-- Section Title -->
+            <div class="container section-title">
+                <h2>Our Blog</h2>
+                <p>Latest news and updates in agriculture</p>
+            </div><!-- End Section Title -->
+
+            <div class="container">
+                <div class="row gy-4">
+                    <!-- Blog Post 1 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="blog-post">
+                            <img src="photo/1.jpg" alt="Blog Image">
+                            <h3>Top 10 Farming Techniques to Improve Yield</h3>
+                            <p>Learn about the most effective farming techniques that can help you increase your yield
+                                and improve the quality of your crops.</p>
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#blogModal1">Read More</a>
+                        </div>
+                    </div><!-- End Blog Post 1 -->
+
+                    <!-- Blog Post 2 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="blog-post">
+                            <img src="photo/2.jpg" alt="Blog Image">
+                            <h3>The Future of Agriculture: Trends to Watch</h3>
+                            <p>Explore the future trends in agriculture that are set to transform the industry and how
+                                you can stay ahead of the curve.</p>
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#blogModal2">Read More</a>
+                        </div>
+                    </div><!-- End Blog Post 2 -->
+
+                    <!-- Blog Post 3 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="blog-post">
+                            <img src="photo/3.jpg" alt="Blog Image">
+                            <h3>Organic Farming: Benefits and Challenges</h3>
+                            <p>Understand the benefits and challenges of organic farming and how it can be a sustainable
+                                alternative for your farm.</p>
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#blogModal3">Read More</a>
+                        </div>
+                    </div><!-- End Blog Post 3 -->
+
+                    <!-- Blog Post 4 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="blog-post">
+                            <img src="photo/4.jpg" alt="Blog Image">
+                            <h3>Impact of Climate Change on Agriculture</h3>
+                            <p>Discover how climate change is affecting agriculture and what strategies farmers can
+                                adopt to mitigate its effects.</p>
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#blogModal4">Read More</a>
+                        </div>
+                    </div><!-- End Blog Post 4 -->
+
+                    <!-- Blog Post 5 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="blog-post">
+                            <img src="photo/6.jpg" alt="Blog Image">
+                            <h3>Chief Minister's Program for Solarization of Tubewells </h3>
+                            <p>Learn about the Chief Minister's initiative to solarize agricultural tubewells in Punjab
+                                and its impact on sustainable farming.</p>
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#blogModal5">Read More</a>
+                        </div>
+                    </div><!-- End Blog Post 5 -->
+
+                    <!-- Blog Post 6 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="blog-post">
+                            <img src="photo/5.jpg" alt="Blog Image">
+                            <h3>Chief Minister's Punjab Green Tractor Program</h3>
+                            <p>Get insights into the Chief Minister's Punjab Green Tractor Program, aimed at promoting
+                                modern farming practices.</p>
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#blogModal6">Read More</a>
+                        </div>
+                    </div><!-- End Blog Post 6 -->
+                </div>
+            </div>
+        </section><!-- End Blog Section -->
+    </main><!-- End Main Content -->
+
+    <!-- Blog Modals -->
+    <div class="modal fade" id="blogModal1" tabindex="-1" aria-labelledby="blogModalLabel1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="blogModalLabel1">Top 10 Farming Techniques to Improve Yield</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Learn about the most effective farming techniques that can help you increase your yield and
+                        improve the quality of your crops. From advanced irrigation methods to crop rotation strategies,
+                        this guide provides comprehensive insights and practical tips for modern farmers.</p>
+
+                    <h6>1. Smart Farming</h6>
+                    <p>Description: Using gadgets like GPS and sensors to check crops and soil conditions.</p>
+                    <p>Benefit: Saves time, cuts waste, and helps farmers work more accurately.</p>
+
+                    <h6>2. Crop Switching</h6>
+                    <p>Description: Changing what you grow in a field every season.</p>
+                    <p>Benefit: Keeps the soil healthy and prevents pests.</p>
+
+                    <h6>3. Safe Pest Control</h6>
+                    <p>Description: Combining natural and chemical methods to handle pests.</p>
+                    <p>Benefit: Reduces pests while using fewer harmful chemicals.</p>
+
+                    <h6>4. No-Till Farming</h6>
+                    <p>Description: Reducing or stopping the tilling of soil.</p>
+                    <p>Benefit: Keeps soil healthy and holds water better.</p>
+
+                    <h6>5. Cover Crops</h6>
+                    <p>Description: Growing plants to protect the soil when you're not growing your main crops.</p>
+                    <p>Benefit: Stops soil from washing away and adds nutrients.</p>
+
+                    <h6>6. Mixing Trees and Crops</h6>
+                    <p>Description: Growing trees or bushes alongside crops.</p>
+                    <p>Benefit: Trees improve soil and provide extra products like wood or fruit.</p>
+
+                    <h6>7. Smart Watering</h6>
+                    <p>Description: Using drip irrigation or other ways to give plants just the right amount of water.
+                    </p>
+                    <p>Benefit: Saves water and boosts crop yield.</p>
+
+                    <h6>8. Strong Crops</h6>
+                    <p>Description: Growing crops that are changed to resist pests or tough weather.</p>
+                    <p>Benefit: Bigger and stronger crops.</p>
+
+                    <h6>9. Natural Farming</h6>
+                    <p>Description: Using compost, animal waste, and other natural things instead of chemicals.</p>
+                    <p>Benefit: Keeps soil healthy and produces cleaner food.</p>
+
+                    <h6>10. Growing Without Soil</h6>
+                    <p>Description: Using water and nutrients instead of soil, often growing plants in tall stacks
+                        indoors.</p>
+                    <p>Benefit: Saves space and uses less water.</p>
+
+                    <p>Source: <a href="https://www.farmgro.africa/9-ways-to-improve-crop-yield-a-farmers-guide/"
+                            target="_blank">https://www.farmgro.africa/9-ways-to-improve-crop-yield-a-farmers-guide/</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div><!-- End Modal 1 -->
+
+
+
+    <!-- Modal 2 -->
+    <div class="modal fade" id="blogModal2" tabindex="-1" aria-labelledby="blogModalLabel2" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="blogModalLabel2">The Future of Agriculture: Trends to Watch</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Explore the future trends in agriculture that are set to transform the industry and how you can
+                        stay ahead of the curve. This article covers emerging technologies, changing market demands, and
+                        new approaches to sustainable farming.</p>
+
+                    <h6>1. Precision Farming</h6>
+                    <p>Description: Using data and sensors to monitor crops and soil to optimize resources.</p>
+                    <p>Benefit: Improves crop yields while reducing waste and costs.</p>
+
+                    <h6>2. Autonomous Equipment</h6>
+                    <p>Description: Self-driving tractors and harvesters that work without human intervention.</p>
+                    <p>Benefit: Increases efficiency and reduces labor costs.</p>
+
+                    <h6>3. Vertical Farming</h6>
+                    <p>Description: Growing crops in stacked layers indoors using LED lights and controlled
+                        environments.</p>
+                    <p>Benefit: Maximizes space and allows for year-round crop production in urban areas.</p>
+
+                    <h6>4. AI in Agriculture</h6>
+                    <p>Description: Using artificial intelligence to predict crop performance, manage risks, and
+                        optimize farming practices.</p>
+                    <p>Benefit: Improves decision-making and reduces uncertainty in farming.</p>
+
+                    <h6>5. Genetic Engineering</h6>
+                    <p>Description: Developing crops that are more resistant to diseases, pests, and extreme weather.
+                    </p>
+                    <p>Benefit: Enhances food security and sustainability by increasing crop resilience.</p>
+
+                    <h6>6. Drone Technology</h6>
+                    <p>Description: Using drones for crop monitoring, spraying, and data collection.</p>
+                    <p>Benefit: Saves time and provides detailed insights into crop health.</p>
+
+                    <h6>7. Blockchain in Supply Chains</h6>
+                    <p>Description: Using blockchain to improve transparency and traceability in the food supply chain.
+                    </p>
+                    <p>Benefit: Ensures food safety and builds consumer trust by tracking products from farm to table.
+                    </p>
+
+                    <h6>8. Sustainable Practices</h6>
+                    <p>Description: Incorporating renewable energy, water conservation, and eco-friendly techniques.</p>
+                    <p>Benefit: Reduces environmental impact and promotes long-term sustainability.</p>
+
+                    <h6>9. Regenerative Agriculture</h6>
+                    <p>Description: Practices that restore soil health, improve biodiversity, and reverse climate change
+                        impacts.</p>
+                    <p>Benefit: Enhances soil productivity and contributes to carbon sequestration.</p>
+
+                    <h6>10. Alternative Proteins</h6>
+                    <p>Description: Exploring plant-based and lab-grown meat as alternatives to traditional livestock
+                        farming.</p>
+                    <p>Benefit: Reduces environmental footprint and meets the growing demand for sustainable protein
+                        sources.</p>
+
+                    <p>Source: <a href="https://www.icl-group.com/blog/top-agritech-trends-to-watch-for-2024/"
+                            target="_blank">https://www.icl-group.com/blog/top-agritech-trends-to-watch-for-2024/</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div><!-- End Modal 2 -->
+
+    <!-- Modal 3 -->
+    <div class="modal fade" id="blogModal3" tabindex="-1" aria-labelledby="blogModalLabel3" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="blogModalLabel3">Organic Farming: Benefits and Challenges</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Understand the benefits and challenges of organic farming and how it can be a sustainable
+                        alternative for your farm. This post delves into the principles of organic farming, the
+                        advantages it offers, and the hurdles you might face when transitioning from conventional
+                        methods.</p>
+
+                    <h6>1. No Synthetic Chemicals</h6>
+                    <p>Description: Organic farming avoids synthetic fertilizers, pesticides, and herbicides.</p>
+                    <p>Benefit: Produces healthier food, reduces pollution, and protects ecosystems.</p>
+
+                    <h6>2. Improved Soil Health</h6>
+                    <p>Description: Organic methods emphasize using compost, crop rotation, and cover crops to build
+                        soil fertility.</p>
+                    <p>Benefit: Enhances soil structure, increases biodiversity, and improves long-term productivity.
+                    </p>
+
+                    <h6>3. Higher Labor Costs</h6>
+                    <p>Description: Organic farming often requires more hands-on work and manual processes.</p>
+                    <p>Challenge: Higher labor costs and increased time investment can impact profitability.</p>
+
+                    <h6>4. Limited Yields</h6>
+                    <p>Description: Organic crops may yield less compared to conventional farming, especially during the
+                        transition period.</p>
+                    <p>Challenge: Lower yields can affect revenue and require careful management to remain competitive.
+                    </p>
+
+                    <h6>5. Environmental Sustainability</h6>
+                    <p>Description: Organic practices minimize the use of non-renewable resources and reduce greenhouse
+                        gas emissions.</p>
+                    <p>Benefit: Promotes a more sustainable farming system that supports biodiversity and climate
+                        resilience.</p>
+
+                    <h6>6. Certification Process</h6>
+                    <p>Description: Farmers must meet strict standards and undergo regular inspections to maintain
+                        organic certification.</p>
+                    <p>Challenge: The certification process can be costly and time-consuming for small-scale farmers.
+                    </p>
+
+                    <h6>7. Consumer Demand</h6>
+                    <p>Description: Organic products are in high demand, with consumers willing to pay premium prices.
+                    </p>
+                    <p>Benefit: Higher market prices can lead to greater profits for organic farmers.</p>
+
+                    <h6>8. Pest and Weed Control</h6>
+                    <p>Description: Organic farmers rely on natural methods like crop rotation, biological pest control,
+                        and manual weeding.</p>
+                    <p>Challenge: Managing pests and weeds without synthetic chemicals can be difficult and
+                        labor-intensive.</p>
+
+                    <h6>9. Animal Welfare</h6>
+                    <p>Description: Organic farming emphasizes ethical treatment of animals, providing them with
+                        natural, healthy living conditions.</p>
+                    <p>Benefit: Enhances animal health and welfare, improving the quality of animal products.</p>
+
+                    <h6>10. Crop Diversity</h6>
+                    <p>Description: Organic farms often grow a variety of crops to maintain ecological balance and
+                        improve resilience.</p>
+                    <p>Benefit: Reduces risks of disease and pest outbreaks, while promoting biodiversity.</p>
+
+                    <p>Source: <a href="https://hastomnigeria.com/organic-farming-the-benefits-and-challenges/"
+                            target="_blank">https://hastomnigeria.com/organic-farming-the-benefits-and-challenges/</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div><!-- End Modal 3 -->
+
+
+    <!-- Modal 4 -->
+    <div class="modal fade" id="blogModal4" tabindex="-1" aria-labelledby="blogModalLabel4" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="blogModalLabel4">Impact of Climate Change on Agriculture</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Discover how climate change is affecting agriculture and what strategies farmers can adopt to
+                        mitigate its effects. This article provides a detailed analysis of climate-related challenges
+                        and offers practical solutions for farmers.</p>
+
+                    <h6>1. Changing Weather Patterns</h6>
+                    <p>Description: Climate change causes more extreme weather events, including droughts, floods, and
+                        unpredictable rainfall.</p>
+                    <p>Impact: Crops are exposed to higher risks of failure, resulting in food insecurity and economic
+                        losses for farmers.</p>
+
+                    <h6>2. Temperature Increases</h6>
+                    <p>Description: Rising global temperatures are shifting growing seasons and affecting crop yields.
+                    </p>
+                    <p>Impact: Heat stress can reduce crop productivity, especially for temperature-sensitive plants
+                        like wheat and maize.</p>
+
+                    <h6>3. Water Scarcity</h6>
+                    <p>Description: Prolonged droughts and reduced water availability are making irrigation more
+                        difficult.</p>
+                    <p>Impact: Water scarcity leads to lower crop yields and limits the ability to expand agricultural
+                        production.</p>
+
+                    <h6>4. Pests and Diseases</h6>
+                    <p>Description: Warmer temperatures allow pests and diseases to spread to new regions.</p>
+                    <p>Impact: Increased pest outbreaks threaten crop health, leading to reduced yields and higher use
+                        of pesticides.</p>
+
+                    <h6>5. Soil Degradation</h6>
+                    <p>Description: More frequent flooding and erosion degrade soil quality, reducing its ability to
+                        support crops.</p>
+                    <p>Impact: Poor soil health results in lower agricultural productivity and higher input costs for
+                        farmers.</p>
+
+                    <h6>6. Crop Adaptation</h6>
+                    <p>Description: Developing climate-resilient crops that can withstand extreme weather conditions and
+                        changing climates.</p>
+                    <p>Solution: Genetic modifications and selective breeding help create crops that are more resistant
+                        to heat, drought, and disease.</p>
+
+                    <h6>7. Carbon Footprint Reduction</h6>
+                    <p>Description: Farmers adopting practices that reduce greenhouse gas emissions, such as using
+                        renewable energy and sustainable farming techniques.</p>
+                    <p>Solution: Reducing emissions helps mitigate climate change and promotes long-term sustainability.
+                    </p>
+
+                    <h6>8. Diversifying Crops</h6>
+                    <p>Description: Growing a variety of crops to spread risk and improve resilience to climate impacts.
+                    </p>
+                    <p>Solution: Crop diversification reduces dependency on single crops and increases overall farm
+                        resilience.</p>
+
+                    <h6>9. Agroforestry</h6>
+                    <p>Description: Integrating trees and shrubs into farmland to provide shade, reduce soil erosion,
+                        and sequester carbon.</p>
+                    <p>Solution: Agroforestry enhances the farm ecosystem, improves soil health, and contributes to
+                        climate mitigation.</p>
+
+                    <h6>10. Adaptive Irrigation</h6>
+                    <p>Description: Using smart irrigation systems to optimize water use and adjust to changing water
+                        availability.</p>
+                    <p>Solution: Efficient water management improves crop yields and reduces waste during periods of
+                        water scarcity.</p>
+
+                    <p>Source: <a
+                            href="https://www.oxfamamerica.org/explore/stories/how-will-climate-change-affect-agriculture/"
+                            target="_blank">https://www.oxfamamerica.org/explore/stories/how-will-climate-change-affect-agriculture/</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div><!-- End Modal 4 -->
+
+
+    <!-- Modal 5 -->
+    <div class="modal fade" id="blogModal5" tabindex="-1" aria-labelledby="blogModalLabel5" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="blogModalLabel5">Chief Minister's Program for Solarization of
+                        Agriculture Tubewells in Punjab</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Learn about the Chief Minister's initiative to solarize agricultural tubewells in Punjab and its
+                        impact on sustainable farming. This post discusses the program's goals, implementation
+                        strategies, and potential benefits for farmers.</p>
+
+                    <h6>1. Program Overview</h6>
+                    <p>Description: The initiative aims to replace diesel-powered tubewells with solar-powered systems.
+                    </p>
+                    <p>Benefit: Reduces reliance on fossil fuels, cuts operational costs, and supports environmental
+                        sustainability.</p>
+
+                    <h6>2. Implementation Strategy</h6>
+                    <p>Description: The program involves installing solar panels and equipment at agricultural sites
+                        across Punjab.</p>
+                    <p>Benefit: Provides farmers with a reliable and cost-effective source of energy for irrigation.</p>
+
+                    <h6>How to Enroll in the Program</h6>
+                    <p>Description: Follow these steps to enroll in the Chief Minister's Solarization Program for
+                        agricultural tubewells:</p>
+
+                    <ol>
+                        <li><strong>Check Eligibility:</strong> Ensure you meet the eligibility criteria set by the
+                            program, including land ownership and current energy usage.</li>
+                        <li><strong>Submit Application:</strong> Fill out and submit the application form available at
+                            the local agriculture office or online portal.</li>
+                        <li><strong>Provide Documentation:</strong> Provide necessary documents such as land records,
+                            identification proof, and existing tubewell details.</li>
+                        <li><strong>Site Assessment:</strong> An assessment team will visit your site to evaluate the
+                            feasibility of installing a solar system.</li>
+                        <li><strong>Approval and Installation:</strong> Once approved, the installation process will be
+                            scheduled. The program will cover the costs of the solar equipment and installation.</li>
+                        <li><strong>Training and Support:</strong> Receive training on how to operate and maintain the
+                            solar system. Ongoing support will be available as needed.</li>
+                    </ol>
+
+                    <h6>Additional Information</h6>
+                    <p>Description: For more details about the program, including eligibility criteria and application
+                        deadlines, visit the official website or contact the local agriculture office.</p>
+                    <p>Benefit: Ensures you have all the necessary information to successfully apply and benefit from
+                        the program.</p>
+
+                    <h6>Last Date of Enrollment</h6>
+                    <p>Description: The last date to enroll in the Chief Minister's Solarization Program is <strong>31st
+                            October 2024</strong>, as announced by the Government of Punjab, Pakistan.</p>
+                    <p>Benefit: Provides a clear deadline for application submissions to ensure timely processing and
+                        participation.</p>
+
+                    <p>Source: <a
+                            href="https://eobilogin.pk/cm-announce-new-eligibility-criteria-for-tube-well-solarisation-scheme/"
+                            target="_blank">https://eobilogin.pk/cm-announce-new-eligibility-criteria-for-tube-well-solarisation-scheme/</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div><!-- End Modal 5 -->
+
+
+    <!-- Modal 6 -->
+    <div class="modal fade" id="blogModal6" tabindex="-1" aria-labelledby="blogModalLabel6" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="blogModalLabel6">Chief Minister's Punjab Green Tractor Program</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Get insights into the Chief Minister's Punjab Green Tractor Program, which aims to support modern
+                        farming practices through government subsidies. This article covers the program's objectives,
+                        eligibility criteria, and the potential impact on the agricultural sector.</p>
+
+                    <h6>Program Overview</h6>
+                    <p>Description: The program offers subsidies for the purchase of new, more efficient tractors to
+                        support farmers in improving their productivity and reducing operational costs.The initiative
+                        helps farmers transition to more
+                        efficient and environmentally friendly equipment.</p>
+                    <p>Benefit: Provides financial assistance to farmers, making it easier for them to upgrade to modern
+                        tractors and improving agricultural efficiency.</p>
+
+                    <h6>Eligibility Criteria</h6>
+                    <p>Description: To be eligible, applicants must be registered farmers in Punjab, own at least 12.5
+                        acres of land, and have a record of using conventional tractors. Additionally, they must not
+                        have received similar subsidies from other government programs.</p>
+                    <p>Benefit: Ensures that the program targets those who will benefit most from the upgrade and
+                        prevents duplication of benefits from other programs.</p>
+
+                    <h6>How to Enroll in the Program</h6>
+                    <p>Description: Follow these steps to apply for the Chief Minister's Punjab Green Tractor Program:
+                    </p>
+
+                    <ol>
+                        <li><strong>Verify Eligibility:</strong> Confirm that you meet the eligibility criteria,
+                            including land ownership and farming practices.</li>
+                        <li><strong>Fill Out Application:</strong> Complete the application form available on the
+                            official Green Tractor Scheme website or at local agriculture offices.</li>
+                        <li><strong>Submit Documentation:</strong> Provide necessary documents such as proof of land
+                            ownership, existing tractor details, and identification documents.</li>
+                        <li><strong>Application Review:</strong> Submit your application to the relevant department for
+                            review. An assessment team will evaluate your submission.</li>
+                        <li><strong>Approval and Subsidy:</strong> Upon approval, you will receive a subsidy voucher.
+                            Use this voucher to purchase an approved tractor from designated vendors.</li>
+                        <li><strong>Training and Support:</strong> Attend training sessions on the operation and
+                            maintenance of the new tractor. Support will be provided for any issues or queries.</li>
+                    </ol>
+
+                    <h6>Additional Information</h6>
+                    <p>Description: For further details on the program, including specific deadlines and application
+                        procedures, visit the official website or contact the local agriculture office.</p>
+                    <p>Benefit: Provides comprehensive information to help you navigate the application process and
+                        maximize the benefits of the program.</p>
+
+                    <h6>Last Date of Enrollment</h6>
+                    <p>Description: The last date to enroll in the Chief Minister's Punjab Green Tractor Program is
+                        <strong>15th November 2024</strong>, as per the latest announcement by the Government of Punjab,
+                        Pakistan.
+                    </p>
+                    <p>Benefit: Provides a clear deadline for application submissions to ensure timely processing and
+                        participation.</p>
+
+                    <p>Source: <a href="https://www.agripunjab.gov.pk/green-tractor-scheme"
+                            target="_blank">https://www.agripunjab.gov.pk/green-tractor-scheme</a></p>
+                </div>
+            </div>
+        </div>
+    </div><!-- End Modal 6 -->
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <!-- About Us -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>About Agriculture Grow</h5>
+                    <p>Agriculture Grow is your trusted platform for all agricultural insights, tips, and market trends.
+                        We are dedicated to empowering farmers and the agricultural community with reliable information.
+                    </p>
+                </div>
+                <!-- Quick Links -->
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#diagnosis">Diagnosis</a></li>
+                        <li><a href="#market">Market Prices</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                <!-- Services -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Our Services</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#consulting">Consulting</a></li>
+                        <li><a href="#support">24/7 Support</a></li>
+                        <li><a href="#training">Training</a></li>
+                        <li><a href="#resources">Resources</a></li>
+                    </ul>
+                </div>
+                <!-- Contact Information -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5>Contact Information</h5>
+                    <div class="contact-info">
+                        <p><i class="bi bi-geo-alt"></i> faisal garden, lahore</p>
+                        <p><i class="bi bi-envelope"></i> contact@agriculturegrow.com</p>
+                        <p><i class="bi bi-telephone"></i> +92 342 567 890</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Social Media Links -->
+        <div class="row mt-4">
+            <div class="col text-center social-icons">
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-twitter"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+            </div>
+        </div>
+        <!-- Copyright -->
+        <div class="row mt-4">
+            <div class="col text-center">
+                <p>&copy; 2024 Agriculture Grow. All Rights Reserved.</p>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
